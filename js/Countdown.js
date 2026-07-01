@@ -88,8 +88,6 @@ if (now > target) {
 
 }
 
-        const now = new Date();
-
         const difference = target - now;
 
         if (difference <= 0) {
