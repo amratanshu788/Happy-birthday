@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========================================= -->
+    <!-- BASIC META                               -->
+    <!-- ========================================= -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta
+        name="viewport"
+        content="width=device-width,
+                 initial-scale=1.0,
+                 maximum-scale=1.0,
+                 user-scalable=no">
+
+    <meta name="theme-color" content="#070b22">
+    
+    <title>✨ Happy Birthday Anjali ❤️ | A Magical Birthday Journey</title>
+
+    <meta
+        name="description"
+        content="A magical interactive birthday journey created especially for Anjali by Amratanshu.">
+
+    <meta
+        name="keywords"
+        content="Birthday, Happy Birthday, Anjali, Future Doctor, Interactive Birthday Website">
+
+    <meta
+        name="author"
+        content="Amratanshu ">
+
+    <!-- ========================================= -->
+    <!-- OPEN GRAPH                                -->
+    <!-- ========================================= -->
+
+    <meta property="og:title"
+        content="Happy Birthday Anjali ❤️">
+
+    <meta property="og:type"
+        content="website">
+
+    <meta property="og:description"
+        content="A Magical Birthday Journey for Future Doctor Anjali.">
+
+    <!-- ========================================= -->
+    <!-- GOOGLE FONTS                              -->
+    <!-- ========================================= -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Great+Vibes&family=Cinzel:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ========================================= -->
+    <!-- FONT AWESOME                              -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ========================================= -->
+    <!-- CSS FILES                                 -->
+    <!-- ========================================= -->
+
+    <link rel="stylesheet"
+        href="css/style.css">
+
+    <link rel="stylesheet"
+        href="css/animations.css">
+
+    <link rel="stylesheet"
+        href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ========================================= -->
+    <!-- LOADER                                    -->
+    <!-- ========================================= -->
+
+    
+    <!-- ========================================= -->
+    <!-- MUSIC                                     -->
+    <!-- ========================================= -->
+
+    <audio
+        id="bgMusic"
+        
+        loop
+        preload="auto">
+
+        <source
+            src="assets/audio/heeriye.mp3"
+            type="audio/mpeg">
+
+    </audio>
+<div id="stars"></div>
+
+<div id="aurora"></div>
+
+<div id="particles"></div>
+
+<div class="background-grid"></div>
+
+<div class="background-noise"></div>
+<canvas id="galaxyCanvas"></canvas>
+
+    <!-- ========================================= -->
+    <!-- MUSIC BUTTON                              -->
+    <!-- ========================================= -->
+
+    
+    <!-- ========================================= -->
+    <!-- BACKGROUND EFFECTS                        -->
+    <!-- ========================================= -->
+
+   
+
+
+
+    <!-- ========================================= -->
+    <!-- MAIN WRAPPER                              -->
+    <!-- ========================================= -->
+<div id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-stars"></div>
+
+        <h1 class="loader-title">
+
+                Happy Birthday
+
+</h1>
+
+<h2 class="loader-name">
+
+ANJALI ❤️
+
+</h2>
+
+<div class="loader-progress">
+
+<div class="loader-bar"></div>
+
+</div>
+
+<p class="loader-text">
+
+Preparing something magical...
+
+</p>
+
+</div>
+
+</div>
+
+    <main id="app">
+
+        <!-- ===================================== -->
+        <!-- HERO SECTION                          -->
+        <!-- ===================================== -->
+        <section id="countdownSection" class="section">
+
+    <h2 id="countdownMessage">
+        Countdown to Anjali's Birthday
+    </h2>
+
+    <div id="countdown">
+
+        <div class="time-box">
+
+            <span id="days">00</span>
+
+            <small>Days</small>
+
+        </div>
+
+        <div class="time-box">
+
+            <span id="hours">00</span>
+
+            <small>Hours</small>
+
+        </div>
+
+        <div class="time-box">
+
+            <span id="minutes">00</span>
+
+            <small>Minutes</small>
+
+        </div>
+
+        <div class="time-box">
+
+            <span id="seconds">00</span>
+
+            <small>Seconds</small>
+
+        </div>
+
+    </div>
+
+</section>
+        <section
+            id="hero"
+            class="section reveal">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+
+                    ✨ A Special Birthday Journey ✨
+
+                </span>
+
+                <h2 class="hero-title">
+
+                    Happy Birthday
+
+                </h2>
+
+                <h1 class="hero-name">
+
+                    ANJALI
+
+                </h1>
+
+                <h3 class="hero-subtitle">
+
+                    🌸 Future Doctor 👩‍⚕️
+
+                </h3>
+
+                <p class="hero-description">
+
+                    Every friendship has a beautiful story.
+                    Ours began in the most unexpected place...
+                    and today, it's time to celebrate you.
+
+                </p>
+
+                <button
+                    id="beginJourney"
+                    class="primary-button">
+
+                    Begin The Journey
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+            <div class="scroll-indicator">
+
+                <span>
+
+                    Scroll
+
+                </span>
+
+                <i class="fa-solid fa-angle-down"></i>
+
+            </div>
+
+        </section>
+        <!-- ===================================== -->
+        <!-- GIFT SECTION                          -->
+        <!-- ===================================== -->
+
+        <section
+            id="giftSection"
+            class="section reveal hidden">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>🎁 Your Surprise Awaits</span>
+
+                    <h2>
+                        A Little Gift
+                    </h2>
+
+                    <p>
+                        Every beautiful journey begins with opening a gift.
+                    </p>
+
+                </div>
+
+                <div class="gift-container">
+
+                    <div id="giftBox">
+
+                        <div class="gift-lid"></div>
+
+                        <div class="gift-body"></div>
+
+                        <div class="gift-ribbon ribbon-vertical"></div>
+
+                        <div class="gift-ribbon ribbon-horizontal"></div>
+
+                        <div class="gift-glow"></div>
+
+                    </div>
+
+                </div>
+
+                <button
+                    id="openGift"
+                    class="primary-button">
+
+                    Open The Gift
+
+                    <i class="fa-solid fa-gift"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- STORY SECTION                         -->
+        <!-- ===================================== -->
+
+        <section
+            id="storySection"
+            
+            class="section reveal hidden">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>🎮 Our Story</span>
+
+                    <h2>
+                        Where Everything Began
+                    </h2>
+
+                </div>
+
+                <div class="story-wrapper">
+
+                    <div class="story-card">
+
+                        <div class="story-icon">
+
+                            🎮
+
+                        </div>
+
+                        <h3>
+
+                            Unexpected Beginning
+
+                        </h3>
+
+                        <p>
+
+                            Who knew a simple BGMI match
+                            would introduce me to such
+                            an amazing friend?
+
+                        </p>
+
+                    </div>
+
+                    <div class="story-card">
+
+                        <div class="story-icon">
+
+                            😊
+
+                        </div>
+
+                        <h3>
+
+                            Endless Conversations
+
+                        </h3>
+
+                        <p>
+
+                            From random talks
+                            to unforgettable laughs,
+                            every conversation
+                            became a beautiful memory.
+
+                        </p>
+
+                    </div>
+
+                    <div class="story-card">
+
+                        <div class="story-icon">
+
+                            💙
+
+                        </div>
+
+                        <h3>
+
+                            A Wonderful Friend
+
+                        </h3>
+
+                        <p>
+
+                            Kind.
+
+                            Genuine.
+
+                            Caring.
+
+                            Positive.
+
+                            That's exactly
+                            how I know you.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- ABOUT ANJALI                          -->
+        <!-- ===================================== -->
+
+        <section
+            id="qualities"
+            class="section reveal hidden">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>🌸 About You</span>
+
+                    <h2>
+
+                        The Person You Are
+
+                    </h2>
+
+                </div>
+
+                <div class="qualities-grid">
+
+                    <div class="quality-card">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <h3>
+
+                            Kind
+
+                        </h3>
+
+                    </div>
+
+                    <div class="quality-card">
+
+                        <i class="fa-solid fa-star"></i>
+
+                        <h3>
+
+                            Positive
+
+                        </h3>
+
+                    </div>
+
+                    <div class="quality-card">
+
+                        <i class="fa-solid fa-face-smile"></i>
+
+                        <h3>
+
+                            Sweet
+
+                        </h3>
+
+                    </div>
+
+                    <div class="quality-card">
+
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+
+                        <h3>
+
+                            Caring
+
+                        </h3>
+
+                    </div>
+
+                    <div class="quality-card">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                        <h3>
+
+                            Intelligent
+
+                        </h3>
+
+                    </div>
+
+                    <div class="quality-card">
+
+                        <i class="fa-solid fa-seedling"></i>
+
+                        <h3>
+
+                            Determined
+
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- DOCTOR JOURNEY                        -->
+        <!-- ===================================== -->
+
+        <section
+            id="doctorJourney"
+            class="section reveal hidden">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>🩺 Dream Journey</span>
+
+                    <h2>
+
+                        Future Doctor
+
+                    </h2>
+
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+
+                            📚
+
+                        </div>
+
+                        <h3>
+
+                            Study Hard
+
+                        </h3>
+
+                        <p>
+
+                            Every page you read today
+                            is bringing you closer
+                            to your dream.
+
+                        </p>
+
+                    </div>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+
+                            📝
+
+                        </div>
+
+                        <h3>
+
+                            Crack The Exams
+
+                        </h3>
+
+                        <p>
+
+                            Your dedication
+                            will always be stronger
+                            than every challenge.
+
+                        </p>
+
+                    </div>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+
+                            🏥
+
+                        </div>
+
+                        <h3>
+
+                            Medical College
+
+                        </h3>
+
+                        <p>
+
+                            One step closer
+                            to wearing
+                            the white coat.
+
+                        </p>
+
+                    </div>
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-icon">
+
+                            👩‍⚕️
+
+                        </div>
+
+                        <h3>
+
+                            Dr. Anjali
+
+                        </h3>
+
+                        <p>
+
+                            One day,
+                            countless people
+                            will smile
+                            because of your kindness.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- ===================================== -->
+        <!-- LETTER SECTION                        -->
+        <!-- ===================================== -->
+
+        <section
+            id="letterSection"
+            class="section reveal hidden">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>💌 A Letter From My Heart</span>
+
+                    <h2>
+
+                        Dear Anjali ❤️
+
+                    </h2>
+
+                </div>
+
+                <div class="letter-card">
+
+                    <div class="letter-decoration"></div>
+
+                    <div id="typewriter" class="letter-content">
+
+                        <p>
+
+                            💖 Happy Birthday, Future Doctor! 🎂✨
+
+                        </p>
+
+                        <p>
+
+                            Who knew that a BGMI match would introduce me to such
+                            an amazing friend? Life really has its own funny ways
+                            of bringing good people together.
+
+                        </p>
+
+                        <p>
+
+                            You're one of the sweetest and kindest people I've met.
+                            Your positive vibe and the way you always stay true to
+                            yourself make you someone people are lucky to know.
+
+                        </p>
+
+                        <p>
+
+                            Never lose that beautiful smile.
+                            It suits you perfectly. 😊
+
+                        </p>
+
+                        <p>
+
+                            I know your dream is to become a doctor,
+                            and I honestly believe you're going to make it.
+
+                        </p>
+
+                        <p>
+
+                            One day you'll wear the white coat with pride,
+                            helping countless people and making their lives better.
+
+                        </p>
+
+                        <p>
+
+                            Thank you for every conversation,
+                            every laugh,
+                            every memory,
+                            and for being such a wonderful friend.
+
+                        </p>
+
+                        <p>
+
+                            May this year bring happiness,
+                            success,
+                            peace,
+                            and everything your heart wishes for.
+
+                        </p>
+
+                        <p>
+
+                            Keep believing in yourself,
+                            keep smiling,
+                            and keep shining.
+
+                        </p>
+
+                        <p class="letter-sign">
+
+                            — Your Friend,
+                            <br>
+                            <strong>Amratanshu ❤️</strong>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CAKE SECTION                          -->
+        <!-- ===================================== -->
+
+        <section
+            id="cakeSection"
+            class="section reveal hidden">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>🎂 Make A Wish</span>
+
+                    <h2>
+
+                        Birthday Cake
+
+                    </h2>
+
+                    <p>
+
+                        Click the button below,
+                        light the candles,
+                        make your wish,
+                        and celebrate.
+
+                    </p>
+
+                </div>
+
+                <div class="cake-wrapper">
+
+                    <div class="cake">
+
+                        <div class="cake-top"></div>
+
+                        <div class="cake-middle"></div>
+
+                        <div class="cake-bottom"></div>
+
+                        <div class="candles">
+
+                            <div class="candle">
+                                <span class="flame"></span>
+                            </div>
+
+                            <div class="candle">
+                                <span class="flame"></span>
+                            </div>
+
+                            <div class="candle">
+                                <span class="flame"></span>
+                            </div>
+
+                            <div class="candle">
+                                <span class="flame"></span>
+                            </div>
+
+                            <div class="candle">
+                                <span class="flame"></span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="cake-buttons">
+
+                    <button
+                        id="lightCandles"
+                        class="primary-button">
+
+                        🕯️ Light Candles
+
+                    </button>
+
+                    <button
+                        id="blowCandles"
+                        class="secondary-button">
+
+                        💨 Blow Candles
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CELEBRATION SECTION                   -->
+        <!-- ===================================== -->
+
+        <section
+            id="celebrationSection"
+            class="section reveal hidden">
+
+            <div class="container">
+
+                <div class="celebration-content">
+
+                    <h2>
+
+                        🎉 Happy Birthday Once Again! 🎉
+
+                    </h2>
+
+                    <h1>
+
+                        ANJALI ❤️
+
+                    </h1>
+
+                    <p>
+
+                        May every dream become reality.
+
+                    </p>
+
+                    <p>
+
+                        May every day bring happiness.
+
+                    </p>
+
+                    <p>
+
+                        May your journey to becoming a doctor
+                        be filled with success.
+
+                    </p>
+
+                    <button
+                        id="celebrateButton"
+                        class="primary-button">
+
+                        🎆 Celebrate
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- PARTICLE LAYERS                       -->
+        <!-- ===================================== -->
+
+        <div id="floatingHearts"></div>
+
+        <div id="floatingFlowers"></div>
+
+        <div id="floatingStars"></div>
+
+        <div id="magicSparkles"></div>
+
+        <canvas id="fireworksCanvas"></canvas>
+
+        <canvas id="confettiCanvas"></canvas>
+
+        <canvas id="particleCanvas"></canvas>
+        <canvas id="meteorCanvas"></canvas>
+        <!-- ===================================== -->
+        <!-- COUNTDOWN MODAL                       -->
+        <!-- ===================================== -->
+
+
+        <!-- ===================================== -->
+        <!-- MUSIC PLAYER                          -->
+        <!-- ===================================== -->
+
+        <div id="musicPlayer">
+
+            <button id="playMusic">
+
+                <i class="fa-solid fa-play"></i>
+
+            </button>
+
+            <div class="music-info">
+
+                <h3>
+
+                    Heeriye ❤️
+
+                </h3>
+
+                <small>
+
+                    Background Music
+
+                </small>
+
+            </div>
+
+            <input
+                type="range"
+                id="volumeSlider"
+                min="0"
+                max="100"
+                value="70">
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- SECRET MESSAGE                        -->
+        <!-- ===================================== -->
+
+        <div id="secretMessage" class="glass">
+
+            <h2>
+
+                ⭐ Secret Unlocked ⭐
+
+            </h2>
+
+            <p>
+
+                Every friendship begins with a hello...
+
+            </p>
+
+            <p>
+
+                Ours began inside a BGMI match...
+
+            </p>
+
+            <p>
+
+                Thank you for becoming
+                such an amazing friend.
+
+            </p>
+
+        </div>
+
+        <!-- ===================================== -->
+        <!-- FINAL MESSAGE                         -->
+        <!-- ===================================== -->
+
+        <section
+            id="finalSection"
+            class="section reveal ">
+
+            <div class="container">
+
+                <div class="glass final-card">
+
+                    <h2>
+
+                        🌸 Happy Birthday 🌸
+
+                    </h2>
+
+                    <h1>
+
+                        ANJALI ❤️
+
+                    </h1>
+
+                    <h3>
+
+                        Future Doctor 👩‍⚕️
+
+                    </h3>
+
+                    <p>
+
+                        Keep smiling.
+
+                    </p>
+
+                    <p>
+
+                        Keep believing.
+
+                    </p>
+
+                    <p>
+
+                        Keep shining.
+
+                    </p>
+
+                    <p>
+
+                        One day,
+                        you'll inspire
+                        countless lives.
+
+                    </p>
+
+                    <h4>
+
+                        Thank You For Being
+                        Such A Wonderful Friend.
+
+                    </h4>
+
+                    <div class="signature">
+
+                        — Amratanshu ❤️
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ===================================== -->
+    <!-- FOOTER                                -->
+    <!-- ===================================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <p>
+
+                Made with ❤️ by
+
+                <strong>
+
+                    Amratanshu
+
+                </strong>
+
+                for
+
+                <strong>
+
+                    Anjali
+
+                </strong>
+
+            </p>
+
+            <p>
+
+                ✨ Happy Birthday Future Doctor ✨
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- ===================================== -->
+    <!-- JAVASCRIPT                            -->
+    <!-- ===================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js">
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+    <script
+        type="module"
+        src="js/app.js">
+    </script>
+
+</body>
+
+</html>

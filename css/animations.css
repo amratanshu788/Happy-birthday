@@ -1,0 +1,2350 @@
+/*==========================================================
+    MAGICAL BIRTHDAY WEBSITE
+    ANIMATIONS
+==========================================================*/
+
+/*==========================================================
+    FADE IN
+==========================================================*/
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/*==========================================================
+    FADE UP
+==========================================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    FADE DOWN
+==========================================================*/
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateY(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    ZOOM IN
+==========================================================*/
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.5);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==========================================================
+    FLOAT
+==========================================================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/*==========================================================
+    TWINKLE
+==========================================================*/
+
+@keyframes twinkle{
+
+    0%{
+
+        opacity:.2;
+
+        transform:scale(.7);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.3);
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+        transform:scale(.7);
+
+    }
+
+}
+
+/*==========================================================
+    STAR PULSE
+==========================================================*/
+
+@keyframes starPulse{
+
+    0%{
+
+        filter:brightness(.7);
+
+    }
+
+    50%{
+
+        filter:brightness(2);
+
+    }
+
+    100%{
+
+        filter:brightness(.7);
+
+    }
+
+}
+
+/*==========================================================
+    HEART FLOAT
+==========================================================*/
+
+@keyframes floatHeart{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+
+            translateY(0)
+
+            translateX(0)
+
+            rotate(0deg)
+
+            scale(.5);
+
+    }
+
+    15%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:
+
+            translateY(-250px)
+
+            translateX(-25px)
+
+            rotate(-12deg)
+
+            scale(1);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+
+            translateY(-650px)
+
+            translateX(45px)
+
+            rotate(25deg)
+
+            scale(1.3);
+
+    }
+
+}
+
+/*==========================================================
+    FLOWER FLOAT
+==========================================================*/
+
+@keyframes floatFlower{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+
+            translateY(-60px)
+
+            rotate(0deg);
+
+    }
+
+    15%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+
+            translateY(110vh)
+
+            rotate(720deg);
+
+    }
+
+}
+
+/*==========================================================
+    SPARKLE
+==========================================================*/
+
+@keyframes sparkle{
+
+    0%{
+
+        opacity:0;
+
+        transform:scale(.2);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:scale(1.2);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:scale(.3);
+
+    }
+
+}
+
+/*==========================================================
+    METEOR
+==========================================================*/
+
+@keyframes meteor{
+
+    from{
+
+        transform:
+
+            translateX(0)
+
+            translateY(0);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:
+
+            translateX(-1200px)
+
+            translateY(1200px);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==========================================================
+    HERO TITLE GLOW
+==========================================================*/
+
+@keyframes heroGlow{
+
+    0%{
+
+        text-shadow:
+
+            0 0 10px rgba(255,255,255,.3);
+
+    }
+
+    50%{
+
+        text-shadow:
+
+            0 0 35px rgba(255,79,163,.6),
+
+            0 0 60px rgba(123,92,255,.5);
+
+    }
+
+    100%{
+
+        text-shadow:
+
+            0 0 10px rgba(255,255,255,.3);
+
+    }
+
+}
+
+/*==========================================================
+    BUTTON PULSE
+==========================================================*/
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==========================================================
+    SCROLL INDICATOR
+==========================================================*/
+
+@keyframes scrollBounce{
+
+    0%{
+
+        transform:
+
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+
+            translateY(10px);
+
+    }
+
+    100%{
+
+        transform:
+
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    LOADER BAR
+==========================================================*/
+
+@keyframes loaderGlow{
+
+    0%{
+
+        box-shadow:
+
+            0 0 10px rgba(255,79,163,.4);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 35px rgba(0,212,255,.8);
+
+    }
+
+    100%{
+
+        box-shadow:
+
+            0 0 10px rgba(255,79,163,.4);
+
+    }
+
+}
+
+/*==========================================================
+    APPLY ANIMATIONS
+==========================================================*/
+
+.hero-title{
+
+    animation:
+
+        heroGlow 4s ease-in-out infinite;
+
+}
+
+.scroll-indicator{
+
+    animation:
+
+        scrollBounce 2s infinite;
+
+}
+
+.loader-bar{
+
+    animation:
+
+        loaderGlow 2s infinite;
+
+}
+
+.primary-button:hover{
+
+    animation:
+
+        pulse .8s ease;
+
+}
+
+.star{
+
+    animation:
+
+        twinkle 3s infinite alternate;
+
+}
+
+.spark{
+
+    animation:
+
+        sparkle 2s infinite;
+
+}
+/*==========================================================
+    AURORA MOVEMENT
+==========================================================*/
+
+@keyframes auroraMove{
+
+    0%{
+
+        transform:
+            translateX(-5%)
+            translateY(-2%)
+            rotate(0deg);
+
+    }
+
+    25%{
+
+        transform:
+            translateX(4%)
+            translateY(3%)
+            rotate(2deg);
+
+    }
+
+    50%{
+
+        transform:
+            translateX(8%)
+            translateY(-4%)
+            rotate(-2deg);
+
+    }
+
+    75%{
+
+        transform:
+            translateX(-4%)
+            translateY(2%)
+            rotate(1deg);
+
+    }
+
+    100%{
+
+        transform:
+            translateX(-5%)
+            translateY(-2%)
+            rotate(0deg);
+
+    }
+
+}
+
+/*==========================================================
+    NEBULA PULSE
+==========================================================*/
+
+@keyframes nebulaPulse{
+
+    0%{
+
+        opacity:.35;
+
+        filter:blur(70px);
+
+    }
+
+    50%{
+
+        opacity:.85;
+
+        filter:blur(95px);
+
+    }
+
+    100%{
+
+        opacity:.35;
+
+        filter:blur(70px);
+
+    }
+
+}
+
+/*==========================================================
+    GIFT OPEN
+==========================================================*/
+
+@keyframes giftOpen{
+
+    0%{
+
+        transform:
+            rotate(0deg)
+            translateY(0);
+
+    }
+
+    35%{
+
+        transform:
+            rotate(-6deg)
+            translateY(-8px);
+
+    }
+
+    70%{
+
+        transform:
+            rotate(-18deg)
+            translateY(-45px);
+
+    }
+
+    100%{
+
+        transform:
+            rotate(-18deg)
+            translateY(-45px);
+
+    }
+
+}
+
+/*==========================================================
+    GIFT GLOW
+==========================================================*/
+
+@keyframes giftGlow{
+
+    0%{
+
+        transform:scale(.8);
+
+        opacity:.2;
+
+    }
+
+    50%{
+
+        transform:scale(1.2);
+
+        opacity:.9;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.45;
+
+    }
+
+}
+
+/*==========================================================
+    GIFT SHAKE
+==========================================================*/
+
+@keyframes giftShake{
+
+    0%{
+
+        transform:rotate(0deg);
+
+    }
+
+    15%{
+
+        transform:rotate(-3deg);
+
+    }
+
+    30%{
+
+        transform:rotate(3deg);
+
+    }
+
+    45%{
+
+        transform:rotate(-2deg);
+
+    }
+
+    60%{
+
+        transform:rotate(2deg);
+
+    }
+
+    75%{
+
+        transform:rotate(-1deg);
+
+    }
+
+    100%{
+
+        transform:rotate(0deg);
+
+    }
+
+}
+
+/*==========================================================
+    GLASS SHINE
+==========================================================*/
+
+@keyframes glassShine{
+
+    from{
+
+        transform:
+            translateX(-130%);
+
+    }
+
+    to{
+
+        transform:
+            translateX(130%);
+
+    }
+
+}
+
+/*==========================================================
+    FLAME FLICKER
+==========================================================*/
+
+@keyframes flame{
+
+    0%{
+
+        transform:
+            translateX(-50%)
+            scale(1);
+
+    }
+
+    20%{
+
+        transform:
+            translateX(-48%)
+            scale(.92);
+
+    }
+
+    40%{
+
+        transform:
+            translateX(-52%)
+            scale(1.05);
+
+    }
+
+    60%{
+
+        transform:
+            translateX(-49%)
+            scale(.95);
+
+    }
+
+    80%{
+
+        transform:
+            translateX(-51%)
+            scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+            translateX(-50%)
+            scale(1);
+
+    }
+
+}
+
+/*==========================================================
+    FIRE GLOW
+==========================================================*/
+
+@keyframes fireGlow{
+
+    0%{
+
+        box-shadow:
+            0 0 8px #ffb300,
+            0 0 18px #ff9100;
+
+    }
+
+    50%{
+
+        box-shadow:
+            0 0 18px #ffd54f,
+            0 0 40px #ff9800;
+
+    }
+
+    100%{
+
+        box-shadow:
+            0 0 8px #ffb300,
+            0 0 18px #ff9100;
+
+    }
+
+}
+
+/*==========================================================
+    MUSIC PULSE
+==========================================================*/
+
+@keyframes musicPulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.12);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*==========================================================
+    FLOATING ORBS
+==========================================================*/
+
+@keyframes orbFloat{
+
+    0%{
+
+        transform:
+            translateY(0)
+            translateX(0);
+
+    }
+
+    25%{
+
+        transform:
+            translateY(-25px)
+            translateX(20px);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-50px)
+            translateX(-15px);
+
+    }
+
+    75%{
+
+        transform:
+            translateY(-15px)
+            translateX(25px);
+
+    }
+
+    100%{
+
+        transform:
+            translateY(0)
+            translateX(0);
+
+    }
+
+}
+
+/*==========================================================
+    APPLY
+==========================================================*/
+
+#aurora{
+
+    animation:
+
+        auroraMove 30s ease-in-out infinite,
+
+        nebulaPulse 10s ease-in-out infinite;
+
+}
+
+
+#giftBox:hover{
+
+    animation:
+
+        giftShake .8s ease-in-out;
+
+}
+
+#giftBox.open .gift-lid{
+
+    animation:
+
+        giftOpen .9s forwards;
+
+}
+
+.flame{
+
+    opacity:0;
+
+}
+.playing{
+
+    animation:
+
+        musicPulse 1s infinite;
+
+}
+
+.orb{
+
+    animation:
+
+        orbFloat 12s ease-in-out infinite;
+
+}
+/*==========================================================
+    LETTER REVEAL
+==========================================================*/
+
+@keyframes letterReveal{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translateY(80px)
+            scale(.95);
+
+        filter:blur(10px);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+        filter:blur(0);
+
+    }
+
+}
+
+/*==========================================================
+    TYPEWRITER CURSOR
+==========================================================*/
+
+@keyframes blinkCursor{
+
+    0%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        opacity:1;
+
+    }
+
+}
+
+/*==========================================================
+    CAKE POP
+==========================================================*/
+
+@keyframes cakePop{
+
+    0%{
+
+        transform:
+            scale(.5)
+            translateY(100px);
+
+        opacity:0;
+
+    }
+
+    70%{
+
+        transform:
+            scale(1.08)
+            translateY(-10px);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    CANDLE LIGHT
+==========================================================*/
+
+@keyframes candleLight{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translateX(-50%)
+            scale(.2);
+
+    }
+
+    40%{
+
+        opacity:1;
+
+        transform:
+            translateX(-50%)
+            scale(1.3);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+            translateX(-50%)
+            scale(1);
+
+    }
+
+}
+
+/*==========================================================
+    BLOW OUT
+==========================================================*/
+
+@keyframes blowOut{
+
+    0%{
+
+        opacity:1;
+
+        transform:
+            translateX(-50%)
+            scale(1);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translateX(-50%)
+            scale(0);
+
+    }
+
+}
+
+/*==========================================================
+    FIREWORK BURST
+==========================================================*/
+
+@keyframes fireworkBurst{
+
+    0%{
+
+        transform:scale(.2);
+
+        opacity:1;
+
+    }
+
+    70%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(2);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==========================================================
+    CONFETTI FALL
+==========================================================*/
+
+@keyframes confettiFall{
+
+    0%{
+
+        transform:
+            translateY(-120vh)
+            rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(120vh)
+            rotate(1080deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==========================================================
+    CELEBRATION GLOW
+==========================================================*/
+
+@keyframes celebrationGlow{
+
+    0%{
+
+        box-shadow:
+            0 0 20px rgba(255,79,163,.2);
+
+    }
+
+    50%{
+
+        box-shadow:
+            0 0 80px rgba(255,79,163,.6),
+            0 0 120px rgba(123,92,255,.45);
+
+    }
+
+    100%{
+
+        box-shadow:
+            0 0 20px rgba(255,79,163,.2);
+
+    }
+
+}
+
+/*==========================================================
+    SECTION REVEAL
+==========================================================*/
+
+@keyframes sectionReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(120px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    CARD FLOAT
+==========================================================*/
+
+@keyframes cardFloat{
+
+    0%{
+
+        transform:
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    MAGIC ROTATE
+==========================================================*/
+
+@keyframes magicRotate{
+
+    from{
+
+        transform:
+            rotate(0deg);
+
+    }
+
+    to{
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+/*==========================================================
+    BACKGROUND SHIMMER
+==========================================================*/
+
+@keyframes shimmer{
+
+    0%{
+
+        background-position:-300px 0;
+
+    }
+
+    100%{
+
+        background-position:300px 0;
+
+    }
+
+}
+
+/*==========================================================
+    APPLY ANIMATIONS
+==========================================================*/
+
+.letter-card{
+
+    animation:
+
+        letterReveal 1.2s ease forwards;
+
+}
+
+.cake{
+
+    animation:
+
+        cakePop 1s ease;
+
+}
+
+.flame.active{
+
+    animation:
+
+        candleLight .4s forwards,
+
+        flame .15s infinite,
+
+        fireGlow 1s infinite;
+
+}
+
+.flame.off{
+
+    animation:
+
+        blowOut .5s forwards;
+
+}
+
+.final-card{
+
+    animation:
+
+        celebrationGlow 5s ease-in-out infinite;
+
+}
+
+.story-card{
+
+    animation:
+
+        cardFloat 6s ease-in-out infinite;
+
+}
+
+.section.active{
+
+    animation:
+
+        sectionReveal .9s ease forwards;
+
+}
+
+.magic-circle{
+
+    animation:
+
+        magicRotate 20s linear infinite;
+
+}
+
+.shimmer{
+
+    background-size:300%;
+
+    animation:
+
+        shimmer 3s linear infinite;
+
+}
+
+.typewriter-cursor{
+
+    animation:
+
+        blinkCursor .8s infinite;
+
+}
+/*==========================================================
+    SHOOTING STAR
+==========================================================*/
+
+@keyframes shootingStar{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translate3d(0,0,0)
+            rotate(45deg)
+            scale(.2);
+
+    }
+
+    10%{
+
+        opacity:1;
+
+    }
+
+    80%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translate3d(-1400px,1400px,0)
+            rotate(45deg)
+            scale(1);
+
+    }
+
+}
+
+/*==========================================================
+    MAGIC PARTICLE
+==========================================================*/
+
+@keyframes magicParticle{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            translateY(0)
+            scale(.3)
+            rotate(0deg);
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translateY(-220px)
+            translateX(60px)
+            scale(1.6)
+            rotate(360deg);
+
+    }
+
+}
+
+/*==========================================================
+    HEART BURST
+==========================================================*/
+
+@keyframes heartBurst{
+
+    0%{
+
+        transform:
+            translate(0,0)
+            scale(.3);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+            translate(var(--x),var(--y))
+            scale(1.4);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==========================================================
+    FLOWER SWIRL
+==========================================================*/
+
+@keyframes flowerSwirl{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            rotate(0deg)
+            scale(.5);
+
+    }
+
+    20%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            translateY(-300px)
+            rotate(720deg)
+            scale(1.2);
+
+    }
+
+}
+
+/*==========================================================
+    GIFT SPARKLES
+==========================================================*/
+
+@keyframes giftSparkle{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+            scale(.2);
+
+    }
+
+    40%{
+
+        opacity:1;
+
+        transform:
+            scale(1.5);
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:
+            scale(.2);
+
+    }
+
+}
+
+/*==========================================================
+    MUSIC VISUALIZER
+==========================================================*/
+
+@keyframes equalizer{
+
+    0%{
+
+        height:12px;
+
+    }
+
+    25%{
+
+        height:32px;
+
+    }
+
+    50%{
+
+        height:18px;
+
+    }
+
+    75%{
+
+        height:40px;
+
+    }
+
+    100%{
+
+        height:12px;
+
+    }
+
+}
+
+/*==========================================================
+    HERO BACKGROUND FLOAT
+==========================================================*/
+
+@keyframes heroBackground{
+
+    0%{
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            scale(1.05)
+            translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    SOFT ROTATION
+==========================================================*/
+
+@keyframes slowRotate{
+
+    from{
+
+        transform:
+            rotate(0deg);
+
+    }
+
+    to{
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+/*==========================================================
+    GLOWING BORDER
+==========================================================*/
+
+@keyframes borderGlow{
+
+    0%{
+
+        border-color:
+            rgba(255,255,255,.12);
+
+    }
+
+    50%{
+
+        border-color:
+            rgba(255,79,163,.65);
+
+    }
+
+    100%{
+
+        border-color:
+            rgba(255,255,255,.12);
+
+    }
+
+}
+
+/*==========================================================
+    LIGHT RAYS
+==========================================================*/
+
+@keyframes lightRays{
+
+    0%{
+
+        opacity:.2;
+
+        transform:
+            scale(.8);
+
+    }
+
+    50%{
+
+        opacity:.8;
+
+        transform:
+            scale(1.2);
+
+    }
+
+    100%{
+
+        opacity:.2;
+
+        transform:
+            scale(.8);
+
+    }
+
+}
+
+/*==========================================================
+    FLOAT LEFT RIGHT
+==========================================================*/
+
+@keyframes drift{
+
+    0%{
+
+        transform:
+            translateX(0);
+
+    }
+
+    25%{
+
+        transform:
+            translateX(15px);
+
+    }
+
+    50%{
+
+        transform:
+            translateX(-15px);
+
+    }
+
+    75%{
+
+        transform:
+            translateX(8px);
+
+    }
+
+    100%{
+
+        transform:
+            translateX(0);
+
+    }
+
+}
+
+/*==========================================================
+    APPLY EFFECTS
+==========================================================*/
+
+.hero-overlay{
+
+    animation:
+
+        heroBackground 18s ease-in-out infinite;
+
+}
+
+.story-icon{
+
+    animation:
+
+        floating 4s ease-in-out infinite;
+
+}
+
+.timeline-icon{
+
+    animation:
+
+        floating 5s ease-in-out infinite;
+
+}
+
+.quality-card i{
+
+    animation:
+
+        floating 4.5s ease-in-out infinite;
+
+}
+
+.gift-glow{
+
+    animation:
+
+        giftGlow 3s ease-in-out infinite;
+
+}
+
+.glass{
+
+    animation:
+
+        borderGlow 6s infinite;
+
+}
+
+.loader-stars{
+
+    animation:
+
+        slowRotate 120s linear infinite;
+
+}
+
+.light-rays{
+
+    animation:
+
+        lightRays 6s ease-in-out infinite;
+
+}
+
+.magic-particle{
+
+    animation:
+
+        magicParticle 3s linear forwards;
+
+}
+
+.equalizer-bar{
+
+    animation:
+
+        equalizer 1s infinite;
+
+}
+
+.shooting-star{
+
+    animation:
+
+        shootingStar 2.8s linear forwards;
+
+}
+
+.heart-burst{
+
+    animation:
+
+        heartBurst 1.5s ease-out forwards;
+
+}
+
+.flower-swirl{
+
+    animation:
+
+        flowerSwirl 5s linear forwards;
+
+}
+
+.sparkle{
+
+    animation:
+
+        giftSparkle 1.4s ease-out forwards;
+
+}
+
+.floating-element{
+
+    animation:
+
+        drift 7s ease-in-out infinite;
+
+}
+/*==========================================================
+    FIREWORK FINALE
+==========================================================*/
+
+@keyframes fireworkExplosion{
+
+    0%{
+
+        transform:scale(0);
+
+        opacity:1;
+
+    }
+
+    70%{
+
+        transform:scale(1.2);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(2.8);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==========================================================
+    CONFETTI SPIN
+==========================================================*/
+
+@keyframes confettiSpin{
+
+    0%{
+
+        transform:
+            translateY(-120vh)
+            rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(120vh)
+            rotate(1440deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/*==========================================================
+    PAGE REVEAL
+==========================================================*/
+
+@keyframes pageReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            scale(.98)
+
+            translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            scale(1)
+
+            translateY(0);
+
+    }
+
+}
+
+/*==========================================================
+    SECTION ZOOM
+==========================================================*/
+
+@keyframes sectionZoom{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            scale(.92);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            scale(1);
+
+    }
+
+}
+
+/*==========================================================
+    ROTATING HALO
+==========================================================*/
+
+@keyframes haloRotate{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/*==========================================================
+    FLOATING CLOUD
+==========================================================*/
+
+@keyframes cloudFloat{
+
+    0%{
+
+        transform:
+
+            translateX(-40px);
+
+    }
+
+    50%{
+
+        transform:
+
+            translateX(40px);
+
+    }
+
+    100%{
+
+        transform:
+
+            translateX(-40px);
+
+    }
+
+}
+
+/*==========================================================
+    GLOWING TEXT
+==========================================================*/
+
+@keyframes glowingText{
+
+    0%{
+
+        text-shadow:
+
+            0 0 10px rgba(255,255,255,.25);
+
+    }
+
+    50%{
+
+        text-shadow:
+
+            0 0 25px rgba(255,216,107,.75),
+
+            0 0 55px rgba(255,79,163,.45);
+
+    }
+
+    100%{
+
+        text-shadow:
+
+            0 0 10px rgba(255,255,255,.25);
+
+    }
+
+}
+
+/*==========================================================
+    WAVE MOTION
+==========================================================*/
+
+@keyframes wave{
+
+    0%{
+
+        transform:translateX(0);
+
+    }
+
+    50%{
+
+        transform:translateX(-25px);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*==========================================================
+    SCROLL REVEAL
+==========================================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+}
+
+.reveal.active{
+
+    animation:
+
+        pageReveal .9s ease forwards;
+
+}
+
+.zoom-reveal{
+
+    opacity:0;
+
+}
+
+.zoom-reveal.active{
+
+    animation:
+
+        sectionZoom .8s ease forwards;
+
+}
+
+/*==========================================================
+    FIREWORK CLASS
+==========================================================*/
+
+.firework{
+
+    animation:
+
+        fireworkExplosion 1.5s ease-out forwards;
+
+}
+
+/*==========================================================
+    CONFETTI CLASS
+==========================================================*/
+
+.confetti{
+
+    animation:
+
+        confettiSpin 5s linear forwards;
+
+}
+
+/*==========================================================
+    TEXT GLOW
+==========================================================*/
+
+.glow-text{
+
+    animation:
+
+        glowingText 4s ease-in-out infinite;
+
+}
+
+/*==========================================================
+    HALO
+==========================================================*/
+
+.halo{
+
+    animation:
+
+        haloRotate 30s linear infinite;
+
+}
+
+/*==========================================================
+    CLOUD
+==========================================================*/
+
+.cloud{
+
+    animation:
+
+        cloudFloat 12s ease-in-out infinite;
+
+}
+
+/*==========================================================
+    WAVE
+==========================================================*/
+
+.wave{
+
+    animation:
+
+        wave 6s ease-in-out infinite;
+
+}
+
+/*==========================================================
+    ANIMATION DELAYS
+==========================================================*/
+
+.delay-1{
+
+    animation-delay:.2s;
+
+}
+
+.delay-2{
+
+    animation-delay:.4s;
+
+}
+
+.delay-3{
+
+    animation-delay:.6s;
+
+}
+
+.delay-4{
+
+    animation-delay:.8s;
+
+}
+
+.delay-5{
+
+    animation-delay:1s;
+
+}
+
+/*==========================================================
+    ANIMATION SPEEDS
+==========================================================*/
+
+.fast{
+
+    animation-duration:.5s !important;
+
+}
+
+.normal{
+
+    animation-duration:1s !important;
+
+}
+
+.slow{
+
+    animation-duration:2s !important;
+
+}
+
+.extra-slow{
+
+    animation-duration:4s !important;
+
+}
+
+/*==========================================================
+    LOOP HELPERS
+==========================================================*/
+
+.infinite{
+
+    animation-iteration-count:infinite;
+
+}
+
+.once{
+
+    animation-iteration-count:1;
+
+}
+
+.paused{
+
+    animation-play-state:paused;
+
+}
+
+/*==========================================================
+    PERFORMANCE HELPERS
+==========================================================*/
+
+.will-animate{
+
+    will-change:
+
+        transform,
+
+        opacity,
+
+        filter;
+
+    transform:
+
+        translateZ(0);
+
+    backface-visibility:hidden;
+
+}
+
+/*==========================================================
+    END OF ANIMATIONS.CSS
+==========================================================*/

@@ -1,0 +1,976 @@
+/*==========================================================
+    RESPONSIVE
+==========================================================*/
+
+/*==========================================================
+    LARGE DESKTOP
+==========================================================*/
+
+@media (min-width:1600px){
+
+    .container{
+
+        max-width:1450px;
+
+    }
+
+    .hero-name{
+
+        font-size:9rem;
+
+    }
+
+    .hero-title{
+
+        font-size:6.5rem;
+
+    }
+
+    .section{
+
+        padding:180px 0;
+
+    }
+
+}
+
+/*==========================================================
+    LAPTOP
+==========================================================*/
+
+@media (max-width:1200px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    .hero-name{
+
+        font-size:6rem;
+
+    }
+
+    .hero-title{
+
+        font-size:4.5rem;
+
+    }
+
+    .timeline-item{
+
+        width:48%;
+
+    }
+
+}
+
+/*==========================================================
+    TABLET
+==========================================================*/
+
+@media (max-width:992px){
+
+    .hero{
+
+        padding:120px 20px;
+
+    }
+
+    .hero-name{
+
+        font-size:5rem;
+
+    }
+
+    .hero-title{
+
+        font-size:4rem;
+
+    }
+
+    .hero-description{
+
+        font-size:17px;
+
+    }
+
+    .story-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .qualities-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .timeline{
+
+        gap:50px;
+
+    }
+
+    .timeline::before{
+
+        left:35px;
+
+    }
+
+    .timeline-item{
+
+        width:calc(100% - 90px);
+
+        margin-left:90px !important;
+
+    }
+
+    .timeline-icon{
+
+        left:-55px !important;
+
+        right:auto;
+
+    }
+
+    .letter-card{
+
+        padding:50px 35px;
+
+    }
+
+    .cake{
+
+        transform:scale(.9);
+
+    }
+
+    .celebration-content{
+
+        padding:60px 30px;
+
+    }
+
+}
+
+/*==========================================================
+    MOBILE
+==========================================================*/
+
+@media (max-width:768px){
+
+    .section{
+
+        padding:90px 0;
+
+    }
+
+    .hero-tag{
+
+        font-size:14px;
+
+    }
+
+    .hero-title{
+
+        font-size:3rem;
+
+    }
+
+    .hero-name{
+
+        font-size:3.8rem;
+
+        letter-spacing:2px;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:1.4rem;
+
+    }
+
+    .hero-description{
+
+        font-size:16px;
+
+    }
+
+    .primary-button,
+
+    .secondary-button{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .qualities-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .letter-card{
+
+        padding:35px 25px;
+
+    }
+
+    .letter-content p{
+
+        font-size:1rem;
+
+    }
+
+    .cake{
+
+        transform:scale(.75);
+
+    }
+
+    .cake-buttons{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .celebration-content h1{
+
+        font-size:3rem;
+
+    }
+
+    .celebration-content h2{
+
+        font-size:2.5rem;
+
+    }
+
+    .final-card{
+
+        padding:45px 25px;
+
+    }
+
+    .final-card h1{
+
+        font-size:3rem;
+
+    }
+
+    .final-card h2{
+
+        font-size:2.6rem;
+
+    }
+
+    #musicPlayer{
+
+        width:90%;
+
+        left:50%;
+
+        transform:translateX(-50%);
+
+        bottom:20px;
+
+    }
+
+    #countdown{
+
+        gap:12px;
+
+    }
+
+    .time-box{
+
+        width:90px;
+
+        height:90px;
+
+    }
+
+}
+/*==========================================================
+    SMALL MOBILE
+==========================================================*/
+
+@media (max-width:576px){
+
+    body{
+
+        font-size:15px;
+
+    }
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .section{
+
+        padding:70px 0;
+
+    }
+
+    .section-heading{
+
+        margin-bottom:45px;
+
+    }
+
+    .section-heading h2{
+
+        font-size:2rem;
+
+    }
+
+    .section-heading span{
+
+        font-size:12px;
+
+        letter-spacing:1px;
+
+    }
+
+    .hero{
+
+        min-height:100vh;
+
+        padding:80px 15px 60px;
+
+    }
+
+    .hero-tag{
+
+        padding:8px 16px;
+
+        font-size:12px;
+
+    }
+
+    .hero-title{
+
+        font-size:2.3rem;
+
+        line-height:1.2;
+
+    }
+
+    .hero-name{
+
+        font-size:2.9rem;
+
+        line-height:1.1;
+
+        letter-spacing:1px;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:1.1rem;
+
+    }
+
+    .hero-description{
+
+        font-size:15px;
+
+        line-height:1.7;
+
+        margin:25px auto;
+
+    }
+
+    .primary-button,
+
+    .secondary-button{
+
+        width:100%;
+
+        padding:16px 22px;
+
+        font-size:15px;
+
+    }
+
+    .gift-container{
+
+        margin:40px 0;
+
+    }
+
+    #giftBox{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+    .gift-body{
+
+        height:135px;
+
+    }
+
+    .gift-lid{
+
+        height:48px;
+
+    }
+
+    .ribbon-horizontal{
+
+        top:40px;
+
+        height:18px;
+
+    }
+
+    .ribbon-vertical{
+
+        width:18px;
+
+    }
+
+    .story-card{
+
+        padding:30px 22px;
+
+    }
+
+    .story-icon{
+
+        width:70px;
+
+        height:70px;
+
+        font-size:30px;
+
+    }
+
+    .story-card h3{
+
+        font-size:1.2rem;
+
+    }
+
+    .quality-card{
+
+        padding:30px 20px;
+
+    }
+
+    .quality-card i{
+
+        font-size:42px;
+
+    }
+
+    .timeline{
+
+        gap:35px;
+
+    }
+
+    .timeline::before{
+
+        left:25px;
+
+    }
+
+    .timeline-item{
+
+        width:calc(100% - 60px);
+
+        margin-left:60px !important;
+
+        padding:24px;
+
+    }
+
+    .timeline-icon{
+
+        width:50px;
+
+        height:50px;
+
+        left:-40px !important;
+
+        font-size:22px;
+
+    }
+
+    .letter-card{
+
+        padding:25px 20px;
+
+    }
+
+    .letter-content p{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .letter-sign{
+
+        font-size:2rem;
+
+    }
+
+    .cake{
+
+        transform:scale(.60);
+
+    }
+
+    .cake-buttons{
+
+        margin-top:0;
+
+    }
+
+    .celebration-content{
+
+        padding:40px 20px;
+
+    }
+
+    .celebration-content h2{
+
+        font-size:2rem;
+
+    }
+
+    .celebration-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .celebration-content p{
+
+        font-size:15px;
+
+    }
+
+    .final-card{
+
+        padding:35px 20px;
+
+    }
+
+    .final-card h2{
+
+        font-size:2rem;
+
+    }
+
+    .final-card h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .final-card h3{
+
+        font-size:1.3rem;
+
+    }
+
+    .signature{
+
+        font-size:2rem;
+
+    }
+
+    footer{
+
+        padding:30px 15px;
+
+    }
+
+    .footer-content p{
+
+        font-size:14px;
+
+    }
+
+}
+
+/*==========================================================
+    EXTRA SMALL DEVICES
+==========================================================*/
+
+@media (max-width:400px){
+
+    .hero-name{
+
+        font-size:2.4rem;
+
+    }
+
+    .hero-title{
+
+        font-size:2rem;
+
+    }
+
+    .hero-description{
+
+        font-size:14px;
+
+    }
+
+    .section-heading h2{
+
+        font-size:1.8rem;
+
+    }
+
+    .time-box{
+
+        width:72px;
+
+        height:72px;
+
+    }
+
+    .time-box span{
+
+        font-size:1.6rem;
+
+    }
+
+    #musicPlayer{
+
+        padding:12px;
+
+        gap:10px;
+
+    }
+
+    #playMusic{
+
+        width:48px;
+
+        height:48px;
+
+    }
+
+    .music-info h3{
+
+        font-size:14px;
+
+    }
+
+    .music-info small{
+
+        font-size:11px;
+
+    }
+
+    #volumeSlider{
+
+        width:70px;
+
+    }
+
+}
+/*==========================================================
+    LANDSCAPE MOBILE
+==========================================================*/
+
+@media (max-width:900px) and (orientation:landscape){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:60px 20px;
+
+    }
+
+    .section{
+
+        padding:60px 0;
+
+    }
+
+    .hero-name{
+
+        font-size:3.5rem;
+
+    }
+
+    .hero-title{
+
+        font-size:2.8rem;
+
+    }
+
+    .cake{
+
+        transform:scale(.65);
+
+    }
+
+    #musicPlayer{
+
+        bottom:15px;
+
+    }
+
+}
+
+/*==========================================================
+    LARGE TOUCH DEVICES
+==========================================================*/
+
+@media (hover:none){
+
+    .primary-button:hover,
+
+    .secondary-button:hover,
+
+    .story-card:hover,
+
+    .quality-card:hover,
+
+    .timeline-item:hover,
+
+    #giftBox:hover,
+
+    .glass:hover{
+
+        transform:none;
+
+        box-shadow:inherit;
+
+    }
+
+    button{
+
+        -webkit-tap-highlight-color:transparent;
+
+    }
+
+}
+
+/*==========================================================
+    HOVER DEVICES
+==========================================================*/
+
+@media (hover:hover){
+
+    .story-card:hover{
+
+        transform:translateY(-15px);
+
+    }
+
+    .quality-card:hover{
+
+        transform:translateY(-12px);
+
+    }
+
+    .timeline-item:hover{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+/*==========================================================
+    HIGH DPI DISPLAYS
+==========================================================*/
+
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi){
+
+    body{
+
+        text-rendering:optimizeLegibility;
+
+        -webkit-font-smoothing:antialiased;
+
+        -moz-osx-font-smoothing:grayscale;
+
+    }
+
+}
+
+/*==========================================================
+    SAFE AREA (IPHONES)
+==========================================================*/
+
+@supports (padding:max(0px)){
+
+    body{
+
+        padding-left:max(0px,env(safe-area-inset-left));
+
+        padding-right:max(0px,env(safe-area-inset-right));
+
+    }
+
+    #musicPlayer{
+
+        bottom:max(20px,env(safe-area-inset-bottom));
+
+    }
+
+}
+
+/*==========================================================
+    REDUCED MOTION
+==========================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/*==========================================================
+    PRINT MODE
+==========================================================*/
+
+@media print{
+
+    body{
+
+        background:#ffffff;
+
+        color:#000000;
+
+    }
+
+    #loader,
+
+    #musicPlayer,
+
+    #fireworksCanvas,
+
+    #confettiCanvas,
+
+    #particleCanvas,
+
+    #floatingHearts,
+
+    #floatingFlowers,
+
+    #floatingStars,
+
+    #magicSparkles,
+
+    .scroll-indicator,
+
+    .primary-button,
+
+    .secondary-button{
+
+        display:none !important;
+
+    }
+
+    .glass{
+
+        background:#ffffff !important;
+
+        border:1px solid #cccccc;
+
+        box-shadow:none;
+
+    }
+
+    .section{
+
+        page-break-inside:avoid;
+
+    }
+
+}
+
+/*==========================================================
+    ACCESSIBILITY
+==========================================================*/
+
+:focus-visible{
+
+    outline:3px solid var(--accent);
+
+    outline-offset:4px;
+
+}
+
+button,
+
+a,
+
+input{
+
+    touch-action:manipulation;
+
+}
+
+/*==========================================================
+    RESPONSIVE UTILITIES
+==========================================================*/
+
+.hide-mobile{
+
+    display:block;
+
+}
+
+.show-mobile{
+
+    display:none;
+
+}
+
+@media (max-width:768px){
+
+    .hide-mobile{
+
+        display:none !important;
+
+    }
+
+    .show-mobile{
+
+        display:block !important;
+
+    }
+
+}
+
+/*==========================================================
+    END OF RESPONSIVE.CSS
+==========================================================*/
