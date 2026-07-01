@@ -32,30 +32,24 @@ init() {
 
     if (!this.button) return;
 
-    if (localStorage.getItem("giftOpened") === "true") {
+    this.opened = false;
 
-        this.opened = true;
+    this.button.disabled = false;
 
-        this.button.innerHTML = "Gift Opened ❤️";
+    this.button.innerHTML = "Open The Gift";
 
-        this.button.disabled = true;
-
-    }
-
-    this.button.addEventListener("click", () => {
-
-        if (this.opened) return;
+    this.button.onclick = () => {
 
         this.openGift();
 
-    });
+    };
 
 }
 
     openGift() {
 
         this.opened = true;
-        localStorage.setItem("giftOpened", "true");
+       
 
         this.button.disabled = true;
 
