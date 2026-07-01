@@ -240,44 +240,17 @@ celebrateButton?.addEventListener("click", () => {
 
     const finalSection = document.getElementById("finalSection");
 
-    if (!finalSection) return;
+    if (!finalSection) {
+        console.error("finalSection not found");
+        return;
+    }
 
-    // Show the final section
     finalSection.classList.remove("hidden");
     finalSection.classList.add("active");
 
-    // Restart celebration effects
-    document.dispatchEvent(
-        new CustomEvent("birthdayCelebration")
-    );
-
-    // Play music if paused
-    if (this.music && !this.music.isPlaying) {
-        this.music.play();
-    }
-
-    // Smooth scroll to final message
-    if (window.gsap) {
-
-        gsap.to(window, {
-
-            duration: 2,
-
-            scrollTo: finalSection,
-
-            ease: "power2.inOut"
-
-        });
-
-    } else {
-
-        finalSection.scrollIntoView({
-
-            behavior: "smooth"
-
-        });
-
-    }
+    finalSection.scrollIntoView({
+        behavior: "smooth"
+    });
 
 });
         /* Keyboard Shortcuts */
