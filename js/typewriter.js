@@ -103,78 +103,56 @@ export class Typewriter {
 
     }
 
-    typeCharacters(paragraph){
+    typeCharacters(paragraph) {
 
-        const text = this.lines[this.currentLine];
+    const text = this.lines[this.currentLine];
 
-        if(this.currentChar < text.length){
+    if (this.currentChar < text.length) {
 
-            paragraph.textContent += text[this.currentChar];
-            if (this.typeSound && this.currentChar % 3 === 0) {
-
-    this.typeSound.currentTime = 0;
-
-    this.typeSound.play().catch(() => {});
-
-}
-
-
-            this.currentChar++;
-
-            paragraph.appendChild(this.cursor);
-
-            this.container.scrollTop = this.container.scrollHeight;
-
-            let delay = 28 + Math.random()*40;
-
-            const character = text[this.currentChar-1];
-
-            if(character === ".")
-
-                delay = 280;
-
-            if(character === ",")
-
-                delay = 170;
-
-            if(character === "!")
-
-                delay = 320;
-
-            if(character === "?")
-
-                delay = 320;
-
-            setTimeout(()=>{
-
-                this.typeCharacters(paragraph);
-
-            },delay);
-
+        // Remove cursor before updating text
+        if (this.cursor.parentNode) {
+            this.cursor.remove();
         }
 
-        else{
+        paragraph.textContent += text[this.currentChar];
+        this.currentChar++;
 
-            this.currentLine++;
+        // Add cursor back at the end
+        paragraph.appendChild(this.cursor);
 
-            this.currentChar = 0;
+        this.container.scrollTop = this.container.scrollHeight;
 
-            if (paragraph.contains(this.cursor)) {
+        let delay = 35;
 
-    paragraph.removeChild(this.cursor);
+        const ch = text[this.currentChar - 1];
 
-}
+        if (ch === "." || ch === "!" || ch === "?") delay = 250;
+        if (ch === ",") delay = 150;
 
-            setTimeout(()=>{
+        setTimeout(() => {
 
-                this.typeNextLine();
+            this.typeCharacters(paragraph);
 
-            },450);
+        }, delay);
 
+    } else {
+
+        if (this.cursor.parentNode) {
+            this.cursor.remove();
         }
+
+        this.currentLine++;
+        this.currentChar = 0;
+
+        setTimeout(() => {
+
+            this.typeNextLine();
+
+        }, 400);
 
     }
 
+}
     finish(){
 
         if(window.gsap){
