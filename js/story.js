@@ -145,4 +145,84 @@ showNextSection() {
     }
 
 }
+    enableHoverEffects() {
+
+        this.cards.forEach(card => {
+
+            card.addEventListener("mouseenter", () => {
+
+                if (window.gsap) {
+
+                    gsap.to(card, {
+
+                        y: -12,
+
+                        scale: 1.03,
+
+                        duration: 0.3
+
+                    });
+
+                }
+
+            });
+
+            card.addEventListener("mouseleave", () => {
+
+                if (window.gsap) {
+
+                    gsap.to(card, {
+
+                        y: 0,
+
+                        scale: 1,
+
+                        duration: 0.3
+
+                    });
+
+                }
+
+            });
+
+            card.addEventListener("focus", () => {
+
+                if (window.gsap) {
+
+                    gsap.to(card, {
+
+                        y: -12,
+
+                        scale: 1.03,
+
+                        duration: 0.3
+
+                    });
+
+                }
+
+            });
+
+            card.addEventListener("blur", () => {
+
+                if (window.gsap) {
+
+                    gsap.to(card, {
+
+                        y: 0,
+
+                        scale: 1,
+
+                        duration: 0.3
+
+                    });
+
+                }
+
+            });
+
+        });
+
+    }
+
 }
