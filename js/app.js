@@ -194,7 +194,42 @@ this.cursor = null;// <-- Add this
             );
 
         });
+/* Begin Journey Button */
 
+const beginButton = document.getElementById("beginJourney");
+
+beginButton?.addEventListener("click", () => {
+
+    const giftSection = document.getElementById("giftSection");
+
+    if (!giftSection) return;
+
+    giftSection.classList.remove("hidden");
+    giftSection.classList.add("active");
+
+    if (window.gsap) {
+
+        gsap.to(window, {
+
+            duration: 1.5,
+
+            scrollTo: giftSection,
+
+            ease: "power2.inOut"
+
+        });
+
+    } else {
+
+        giftSection.scrollIntoView({
+
+            behavior: "smooth"
+
+        });
+
+    }
+
+});
         /* Keyboard Shortcuts */
 
         document.addEventListener("keydown", e => {
