@@ -87,8 +87,6 @@ init() {
 
         this.releaseMagic();
 
-);
-
         this.musicPlayer?.play();
 
         setTimeout(() => {
