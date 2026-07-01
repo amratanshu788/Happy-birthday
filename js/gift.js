@@ -86,9 +86,6 @@ init() {
         }
 
         this.releaseMagic();
-        document.dispatchEvent(
-
-    new CustomEvent("birthdayCelebration")
 
 );
 
