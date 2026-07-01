@@ -238,78 +238,44 @@ const celebrateButton = document.getElementById("celebrateButton");
 
 celebrateButton?.addEventListener("click", () => {
 
-    // Resume music if paused
-    this.music?.play();
+    const finalSection = document.getElementById("finalSection");
 
-    // Restart fireworks & confetti
+    if (!finalSection) return;
+
+    // Show the final section
+    finalSection.classList.remove("hidden");
+    finalSection.classList.add("active");
+
+    // Restart celebration effects
     document.dispatchEvent(
         new CustomEvent("birthdayCelebration")
     );
 
-    // Floating hearts
-    const hearts = document.getElementById("floatingHearts");
-
-    if (hearts) {
-
-        const icons = ["❤️", "💖", "💕", "💗", "💝"];
-
-        for (let i = 0; i < 40; i++) {
-
-            const heart = document.createElement("div");
-
-            heart.className = "heart";
-
-            heart.innerHTML =
-                icons[Math.floor(Math.random() * icons.length)];
-
-            heart.style.left = Math.random() * 100 + "%";
-            heart.style.top = "100%";
-            heart.style.fontSize =
-                (18 + Math.random() * 20) + "px";
-            heart.style.animationDuration =
-                (4 + Math.random() * 3) + "s";
-
-            hearts.appendChild(heart);
-
-            setTimeout(() => {
-
-                heart.remove();
-
-            }, 7000);
-
-        }
-
+    // Play music if paused
+    if (this.music && !this.music.isPlaying) {
+        this.music.play();
     }
 
-    // Show Final Section
-    const finalSection = document.getElementById("finalSection");
+    // Smooth scroll to final message
+    if (window.gsap) {
 
-    if (finalSection) {
+        gsap.to(window, {
 
-        finalSection.classList.remove("hidden");
-        finalSection.classList.add("active");
+            duration: 2,
 
-        if (window.gsap) {
+            scrollTo: finalSection,
 
-            gsap.to(window, {
+            ease: "power2.inOut"
 
-                duration: 2,
+        });
 
-                scrollTo: finalSection,
+    } else {
 
-                ease: "power2.inOut"
+        finalSection.scrollIntoView({
 
-            });
+            behavior: "smooth"
 
-        } else {
-
-            finalSection.scrollIntoView({
-
-                behavior: "smooth"
-
-            });
-
-        }
+        });
 
     }
 
