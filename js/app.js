@@ -230,6 +230,90 @@ beginButton?.addEventListener("click", () => {
     }
 
 });
+/*==============================================
+    Celebrate Button
+==============================================*/
+
+const celebrateButton = document.getElementById("celebrateButton");
+
+celebrateButton?.addEventListener("click", () => {
+
+    // Resume music if paused
+    this.music?.play();
+
+    // Restart fireworks & confetti
+    document.dispatchEvent(
+        new CustomEvent("birthdayCelebration")
+    );
+
+    // Floating hearts
+    const hearts = document.getElementById("floatingHearts");
+
+    if (hearts) {
+
+        const icons = ["❤️", "💖", "💕", "💗", "💝"];
+
+        for (let i = 0; i < 40; i++) {
+
+            const heart = document.createElement("div");
+
+            heart.className = "heart";
+
+            heart.innerHTML =
+                icons[Math.floor(Math.random() * icons.length)];
+
+            heart.style.left = Math.random() * 100 + "%";
+            heart.style.top = "100%";
+            heart.style.fontSize =
+                (18 + Math.random() * 20) + "px";
+            heart.style.animationDuration =
+                (4 + Math.random() * 3) + "s";
+
+            hearts.appendChild(heart);
+
+            setTimeout(() => {
+
+                heart.remove();
+
+            }, 7000);
+
+        }
+
+    }
+
+    // Show Final Section
+    const finalSection = document.getElementById("finalSection");
+
+    if (finalSection) {
+
+        finalSection.classList.remove("hidden");
+        finalSection.classList.add("active");
+
+        if (window.gsap) {
+
+            gsap.to(window, {
+
+                duration: 2,
+
+                scrollTo: finalSection,
+
+                ease: "power2.inOut"
+
+            });
+
+        } else {
+
+            finalSection.scrollIntoView({
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+    }
+
+});
         /* Keyboard Shortcuts */
 
         document.addEventListener("keydown", e => {
