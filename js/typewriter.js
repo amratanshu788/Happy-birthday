@@ -103,21 +103,25 @@ export class Typewriter {
 
     }
 
-    typeCharacters(paragraph) {
+typeCharacters(paragraph) {
 
     const text = this.lines[this.currentLine];
 
     if (this.currentChar < text.length) {
 
-        // Remove cursor before updating text
+        // Remove cursor
         if (this.cursor.parentNode) {
             this.cursor.remove();
         }
 
-        paragraph.textContent += text[this.currentChar];
+        // Append only the next character
+        paragraph.append(
+            document.createTextNode(text[this.currentChar])
+        );
+
         this.currentChar++;
 
-        // Add cursor back at the end
+        // Put cursor back
         paragraph.appendChild(this.cursor);
 
         this.container.scrollTop = this.container.scrollHeight;
